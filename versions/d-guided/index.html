@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'">
+  <title>Apex Config Editor</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="guided.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">APEX<span>CONFIG</span></div>
+    <nav id="nav"></nav>
+    <div class="file-box">
+      <div class="file-name" id="file-name">—</div>
+      <div id="file-badges" class="badges"></div>
+      <div id="apex-status" class="apex-status"></div>
+      <button id="open-btn" class="btn small">Change file…</button>
+      <label class="theme-row">Theme
+        <select id="theme">
+          <option value="red">Apex red</option>
+          <option value="navy">Navy</option>
+        </select>
+      </label>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div id="banners"></div>
+    <div class="toolbar">
+      <h1 id="view-title">—</h1>
+      <input id="search" type="search" placeholder="Search settings, keys, actions…" autocomplete="off">
+    </div>
+    <div id="view"></div>
+  </main>
+
+  <aside class="changes">
+    <div class="changes-head">
+      <h2>Pending changes <span id="change-count" class="count">0</span></h2>
+      <div class="history-btns">
+        <button id="undo-btn" class="btn small" title="Undo (Ctrl+Z)">↶ Undo</button>
+        <button id="redo-btn" class="btn small" title="Redo (Ctrl+Y)">↷ Redo</button>
+      </div>
+    </div>
+    <p class="hint">Nothing is written to your file until you press <b>Save</b>.</p>
+    <div id="change-list" class="change-list"></div>
+    <div class="change-actions">
+      <button id="discard-btn" class="btn">Discard all</button>
+      <button id="save-btn" class="btn primary">Save…</button>
+    </div>
+  </aside>
+
+  <dialog id="wizard"></dialog>
+  <dialog id="setup"></dialog>
+  <div id="launch-fab" class="launch-fab" hidden></div>
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="../../shared/dom.js"></script>
+  <script src="binds-catalog.js"></script>
+  <script src="launch-catalog.js"></script>
+  <script src="video-catalog.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>

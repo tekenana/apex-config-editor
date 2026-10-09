@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'">
+  <title>Apex Config Editor — Safeguard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="status-strip">
+    <div class="title">
+      <span class="shield">⛨</span>
+      <div>
+        <h1>Apex Config Editor <small>Safeguard</small></h1>
+        <div class="path" id="file-path">—</div>
+      </div>
+    </div>
+    <div id="checks" class="checks"></div>
+    <button id="open-btn" class="btn">Open file…</button>
+  </header>
+
+  <div id="banners"></div>
+
+  <div class="layout">
+    <section class="settings">
+      <div class="steps">
+        <span class="step" id="step-1">1 · Edit</span>
+        <span class="step" id="step-2">2 · Review</span>
+        <span class="step" id="step-3">3 · Write</span>
+      </div>
+      <div id="settings-list"></div>
+    </section>
+
+    <section class="panel">
+      <div class="tabs">
+        <button class="tab active" data-tab="review">Review changes</button>
+        <button class="tab" data-tab="backups">Backups</button>
+      </div>
+      <div id="tab-review" class="tab-body"></div>
+      <div id="tab-backups" class="tab-body" hidden></div>
+    </section>
+  </div>
+
+  <script src="../../shared/dom.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>

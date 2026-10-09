@@ -1,0 +1,40 @@
+{
+  "name": "apex-config-editor",
+  "productName": "Apex Config Editor",
+  "version": "0.1.0",
+  "description": "Desktop app to view and safely edit an Apex Legends settings.cfg",
+  "author": "dihfense",
+  "private": true,
+  "main": "versions/d-guided/main.js",
+  "scripts": {
+    "start:a": "electron versions/a-essentials/main.js",
+    "start:b": "electron versions/b-explorer/main.js",
+    "start:c": "electron versions/c-safeguard/main.js",
+    "test": "node --test test/*.test.js",
+    "start:d": "electron versions/d-guided/main.js",
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^44.5.1",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.dihfense.apexconfigeditor",
+    "productName": "Apex Config Editor",
+    "files": [
+      "package.json",
+      "shared/**/*",
+      "versions/d-guided/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable",
+      "signAndEditExecutable": false
+    },
+    "portable": {
+      "artifactName": "Apex Config Editor ${version}.exe"
+    }
+  }
+}

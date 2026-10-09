@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'">
+  <title>Apex Config Editor — Essentials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Apex Config Editor</h1>
+      <p class="file-line">
+        <span id="file-name">—</span>
+        <span id="file-badges"></span>
+      </p>
+    </div>
+    <button id="open-btn" class="btn ghost">Open file…</button>
+  </header>
+
+  <main id="sections"></main>
+
+  <footer class="savebar">
+    <span id="change-count">No changes</span>
+    <div class="savebar-actions">
+      <button id="reset-btn" class="btn ghost" disabled>Reset</button>
+      <button id="preview-btn" class="btn primary" disabled>Preview &amp; save</button>
+    </div>
+  </footer>
+
+  <dialog id="preview-dialog">
+    <h2>Review changes</h2>
+    <p class="muted">Only these lines will change. Everything else stays exactly as it is.</p>
+    <div id="diff-list" class="diff"></div>
+    <p class="muted small" id="backup-note"></p>
+    <div class="dialog-actions">
+      <button id="cancel-btn" class="btn ghost">Cancel</button>
+      <button id="confirm-save-btn" class="btn primary">Save</button>
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="../../shared/dom.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>

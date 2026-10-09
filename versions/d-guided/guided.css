@@ -1,0 +1,1743 @@
+/* Version D additions on top of the Explorer dark theme (style.css). */
+.dim {
+  width: auto;
+  color: var(--muted);
+}
+.table td.dim {
+  width: 50px;
+  color: #5d6470;
+}
+.changes-head h2 {
+  font-size: 12px;
+  white-space: nowrap;
+}
+.history-btns .btn {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+}
+.backup .dim {
+  font-size: 12px;
+}
+a {
+  color: var(--accent);
+}
+.small {
+  font-size: 12px;
+}
+
+.count.zero {
+  background: var(--tile);
+  color: var(--muted);
+}
+.badge.lock {
+  background: rgba(126, 224, 143, 0.12);
+  color: var(--add-ink);
+}
+.badge.warn {
+  background: rgba(255, 193, 7, 0.15);
+  color: #ffd36b;
+}
+
+.nav-item.featured {
+  color: var(--ink);
+  font-weight: 600;
+}
+.nav-item.featured .icon {
+  color: #ffc940;
+}
+.apex-status {
+  font-size: 12px;
+}
+
+#banners {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+#banners:empty {
+  display: none;
+}
+.banner {
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.banner.warn {
+  background: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.35);
+  color: #ffd36b;
+}
+.banner.error {
+  background: var(--del);
+  border: 1px solid rgba(248, 81, 73, 0.4);
+  color: var(--del-ink);
+}
+
+/* pending panel */
+.changes-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.changes-head h2 {
+  margin: 0;
+}
+.history-btns {
+  display: flex;
+  gap: 4px;
+}
+.hint {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 6px 0 12px;
+}
+.change-label {
+  font-weight: 600;
+  font-size: 13px;
+}
+.change-values {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: Consolas, monospace;
+  font-size: 12px;
+}
+.old {
+  color: var(--del-ink);
+  text-decoration: line-through;
+  opacity: 0.85;
+}
+.new {
+  color: var(--add-ink);
+  font-weight: 600;
+}
+.to {
+  color: var(--muted);
+}
+.btn.tiny {
+  padding: 3px 8px;
+  font-size: 11.5px;
+}
+
+/* binds */
+.segmented {
+  display: inline-flex;
+  background: var(--tile);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 3px;
+  margin-bottom: 6px;
+}
+.segmented button {
+  all: unset;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.segmented button.active {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+.segmented button.active .dim {
+  color: rgba(255, 255, 255, 0.7);
+}
+.bind-group h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  margin: 18px 0 4px;
+}
+.bind-key {
+  width: 130px;
+}
+.bind-kind {
+  width: 60px;
+}
+.bind-action {
+  font-weight: 600;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.bind-raw {
+  color: #5d6470;
+  font-size: 11px;
+}
+.tag {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(255, 201, 64, 0.14);
+  color: #ffc940;
+}
+.tag.dim {
+  background: var(--tile);
+  color: var(--muted);
+}
+.tag.chain {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* backups */
+.backups {
+  max-width: 880px;
+  display: grid;
+  gap: 18px;
+}
+.safe-hero {
+  display: flex;
+  gap: 18px;
+  padding: 20px 22px;
+  border-radius: 12px;
+  background: rgba(126, 224, 143, 0.07);
+  border: 1px solid rgba(126, 224, 143, 0.3);
+}
+.safe-icon {
+  font-size: 40px;
+  line-height: 1;
+}
+.safe-hero h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+.safe-hero p {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+.safe-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.confirm {
+  display: inline-flex;
+  gap: 6px;
+}
+.warn-text {
+  color: #ffd36b;
+  font-size: 13px;
+}
+.compare h3,
+.backup-list h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+.table.compact td {
+  padding: 5px 8px;
+}
+.table td.now {
+  color: var(--del-ink);
+  font-family: Consolas, monospace;
+  font-size: 12px;
+}
+.table td.after {
+  color: var(--add-ink);
+  font-family: Consolas, monospace;
+  font-size: 12px;
+}
+.backup-list {
+  display: grid;
+  gap: 8px;
+}
+.backup {
+  background: var(--tile);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.backup-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.backup-name {
+  font-weight: 600;
+  font-size: 13.5px;
+}
+.backup-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.backup .compare {
+  margin-top: 10px;
+}
+
+/* guided save dialog */
+dialog {
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 24px 26px;
+  width: min(640px, 92vw);
+  max-height: 88vh;
+  overflow: auto;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+dialog h2 {
+  margin: 0 0 4px;
+}
+
+.wiz-diff {
+  display: grid;
+  gap: 4px;
+  margin: 6px 0;
+}
+.wiz-diff-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 8px;
+  align-items: center;
+  background: var(--bg);
+  border-radius: 5px;
+  padding: 5px 9px;
+  font-size: 12.5px;
+}
+.wiz-diff-row .old,
+.wiz-diff-row .new {
+  font-family: Consolas, monospace;
+}
+.wiz-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+.wiz-done-icon {
+  width: 60px;
+  height: 60px;
+  margin: 4px auto 10px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  background: rgba(126, 224, 143, 0.15);
+  color: var(--add-ink);
+}
+.wiz-results {
+  list-style: none;
+  padding: 14px 16px;
+  margin: 14px 0;
+  background: var(--bg);
+  border-radius: 8px;
+  display: grid;
+  gap: 6px;
+  font-size: 13.5px;
+}
+.center {
+  text-align: center;
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2c313a;
+  color: var(--ink);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+.toast.error {
+  background: #5a1d1d;
+  color: var(--del-ink);
+}
+
+/* jump & dash page: reuses .grid / .tile from the other tabs */
+.tile.wide {
+  grid-column: 1 / -1;
+}
+.section-h {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  margin: 22px 0 10px;
+}
+.grid.spaced {
+  margin-top: 12px;
+}
+.tile details summary {
+  cursor: pointer;
+}
+.tile details[open] summary {
+  margin-bottom: 10px;
+}
+.tile details .table {
+  margin-bottom: 10px;
+}
+.tile details .opt {
+  margin: 8px 0;
+}
+
+.tile details summary {
+  list-style: none;
+}
+.tile details summary::before {
+  content: "▸";
+  color: var(--muted);
+  margin-right: 8px;
+}
+.tile details[open] summary::before {
+  content: "▾";
+}
+
+/* main toggle: same card as the other tabs, a bit bigger */
+.tile.hero-toggle {
+  padding: 20px 22px;
+}
+.tile.hero-toggle .tile-label {
+  font-size: 17px;
+}
+.tile.hero-toggle .tile-help {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 6px 0 8px;
+}
+
+/* jump: advanced section */
+.adv-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin: 6px 0 12px;
+}
+.adv-title {
+  font-weight: 600;
+  font-size: 13.5px;
+}
+.adv-title.spaced {
+  margin-top: 10px;
+}
+.adv-select {
+  width: 200px;
+  padding: 6px 8px;
+}
+.adv-keys {
+  display: grid;
+  gap: 2px;
+  margin: 4px 0 10px;
+}
+.adv-keys .opt {
+  margin: 4px 0;
+}
+.adv-note {
+  font-size: 12.5px;
+  color: var(--muted);
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  margin: 8px 0;
+}
+.table.spaced {
+  margin-top: 10px;
+}
+
+/* ★ indicator on jump keys in Binds, with hover tooltip */
+.jump-star {
+  all: unset;
+  position: relative;
+  cursor: pointer;
+  color: #ffc940;
+  font-size: 14px;
+  line-height: 1;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+.jump-star:hover,
+.jump-star:focus-visible {
+  background: rgba(255, 201, 64, 0.14);
+}
+.jump-star::after {
+  content: attr(data-tip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+  width: 260px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: #2c313a;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.45;
+  white-space: normal;
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.12s;
+  z-index: 5;
+}
+.jump-star:hover::after,
+.jump-star:focus-visible::after {
+  opacity: 1;
+}
+
+/* launch options */
+.tier {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 1px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.tier-recommended {
+  background: rgba(126, 224, 143, 0.14);
+  color: var(--add-ink);
+}
+.tier-situational {
+  background: rgba(120, 170, 255, 0.14);
+  color: #9cc0ff;
+}
+.tier-myth {
+  background: var(--tile);
+  color: var(--muted);
+  border: 1px solid var(--line);
+}
+
+.launch-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.launch-tile.myth:not(.on) {
+  opacity: 0.75;
+}
+.launch-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.launch-head > div {
+  flex: 1;
+  min-width: 0;
+}
+.snippet {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+.snippet code {
+  color: var(--add-ink);
+  flex: 1;
+}
+.snippet-input {
+  width: 70px;
+}
+
+.line-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+  margin: 6px 0;
+}
+.line-row .raw {
+  flex: 1;
+}
+.launch-line {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  color: var(--add-ink);
+  font-size: 14px;
+  word-break: break-all;
+}
+.launch-line.empty {
+  color: var(--muted);
+}
+.launch-line.small {
+  font-size: 12px;
+  padding: 6px 10px;
+}
+.where {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.segmented.small button {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+.where-steps {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  color: var(--muted);
+  display: grid;
+  gap: 2px;
+}
+.extra,
+.steam-row {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+.extra-label {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.steam-card .banner {
+  margin: 6px 0 10px;
+}
+.steam-row {
+  margin: 8px 0;
+}
+.steam-row select {
+  padding: 6px 8px;
+}
+.steam-actions {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+/* setup dialog */
+#setup {
+  width: min(720px, 94vw);
+}
+#setup .section-h {
+  margin: 18px 0 8px;
+}
+.setup-list {
+  display: grid;
+  gap: 8px;
+}
+.setup-option {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: var(--tile);
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+.setup-option.selected {
+  border-color: var(--accent);
+  background: linear-gradient(var(--accent-soft), var(--accent-soft)), var(--tile);
+}
+.setup-option input {
+  accent-color: var(--accent);
+  margin-top: 3px;
+}
+.setup-title {
+  font-weight: 600;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.setup-path {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin: 3px 0;
+  word-break: break-all;
+}
+.setup-help {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.setup-help b {
+  color: var(--ink);
+}
+.ok-text {
+  color: var(--add-ink);
+  font-size: 13px;
+}
+
+/* shared bits: big switch + inline keycaps */
+.switch.big {
+  width: 52px;
+  height: 28px;
+  border-radius: 14px;
+}
+.switch.big::after {
+  width: 22px;
+  height: 22px;
+}
+.switch.big:checked::after {
+  left: 27px;
+}
+.keycap {
+  display: inline-block;
+  padding: 1px 8px;
+  margin: 0 2px;
+  border-radius: 5px;
+  background: linear-gradient(#2c313a, #23272e);
+  border: 1px solid #3a404b;
+  border-bottom-width: 2px;
+  font-family: Consolas, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: var(--ink);
+}
+
+.tier {
+  white-space: nowrap;
+}
+.launch-tile .tile-label {
+  flex-wrap: wrap;
+}
+
+/* sidebar status lines */
+.status-line {
+  font-size: 12px;
+  line-height: 1.6;
+  cursor: default;
+}
+.status-line.ok {
+  color: var(--add-ink);
+}
+.status-line.bad {
+  color: var(--del-ink);
+  font-weight: 600;
+}
+.status-line.warn {
+  color: #ffd36b;
+}
+
+/* graphics & video */
+.video-select {
+  width: 100%;
+  margin: 4px 0 6px;
+  padding: 6px 8px;
+}
+.segmented.wrap {
+  flex-wrap: wrap;
+  margin: 6px 0;
+}
+.res-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 6px;
+}
+.res-input {
+  width: 90px;
+}
+.tile.preset {
+  display: grid;
+  gap: 10px;
+}
+.stretch-guide {
+  display: grid;
+  gap: 8px;
+  border-color: rgba(255, 201, 64, 0.4);
+}
+.note.spaced {
+  margin-top: 16px;
+}
+
+.setup-safe {
+  margin: 10px 0 4px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: rgba(126, 224, 143, 0.08);
+  border: 1px solid rgba(126, 224, 143, 0.3);
+  font-size: 13px;
+  line-height: 1.5;
+}
+.tile.preset .btn {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.tile.preset .ok-text {
+  white-space: nowrap;
+}
+
+/* dark scrollbars everywhere (no white native bars) */
+:root {
+  color-scheme: dark;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #2f343d;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #444b57;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* dialogs: scrolling body, buttons pinned at the bottom */
+dialog {
+  padding: 0;
+  overflow: hidden;
+}
+dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+.dlg-body {
+  overflow: auto;
+  min-height: 0;
+  padding: 24px 26px 12px;
+}
+dialog .wiz-actions {
+  margin: 0;
+  padding: 14px 26px;
+  border-top: 1px solid var(--line);
+  background: var(--panel);
+  flex-shrink: 0;
+}
+.wiz-check.ok {
+  margin: 12px 0 4px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--add-ink);
+  background: rgba(126, 224, 143, 0.08);
+  border: 1px solid rgba(126, 224, 143, 0.3);
+}
+dialog .banner {
+  margin: 12px 0 4px;
+}
+
+/* file picker: calm blue instead of the red accent (red reads as an error here) */
+#setup {
+  --accent: #4c8dff;
+  --accent-soft: rgba(76, 141, 255, 0.12);
+  --on-accent: #fff;
+}
+
+/* launch options: command always previewed, greyed while off */
+.snippet.off {
+  opacity: 0.45;
+}
+.snippet.off code {
+  color: var(--muted);
+}
+.launch-tile .slider-row {
+  margin: 0;
+}
+.slider-value {
+  min-width: 78px;
+  text-align: right;
+  font-family: Consolas, monospace;
+  font-size: 12.5px;
+  color: var(--ink);
+}
+.launch-tile:not(.on) .slider-value {
+  color: var(--muted);
+}
+.section-line {
+  margin-top: 12px;
+  display: grid;
+  gap: 4px;
+}
+.section-line .line-row {
+  margin: 0;
+}
+
+/* competitive preset list */
+.preset-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.preset-head .tile-help {
+  margin: 0;
+}
+.wiz-diff-row.same {
+  opacity: 0.6;
+}
+
+/* launch line under each section: launcher picker + Steam write status */
+.section-line .segmented {
+  margin: 0;
+  justify-self: start;
+}
+.steam-status {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 12.5px;
+}
+.steam-running {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section-line .where-steps {
+  margin-top: 2px;
+}
+.section-line .confirm .btn,
+.section-line .line-row .btn {
+  white-space: nowrap;
+}
+
+/* even button grids (display mode, resolution presets): equal cells, centered labels */
+.segmented.btn-grid {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  margin: 6px 0;
+}
+.segmented.btn-grid.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.segmented.btn-grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.segmented.btn-grid.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.segmented.btn-grid button {
+  text-align: center;
+  padding: 7px 8px;
+}
+.res-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px;
+}
+.res-row .res-input {
+  width: 100%;
+  text-align: center;
+}
+
+/* launch line spacing; Experimental tag stacked under the Write button */
+.section-line {
+  gap: 10px;
+  margin-top: 16px;
+}
+.section-line .line-row {
+  align-items: flex-start;
+}
+.section-line .line-row .launch-line {
+  min-height: 32px;
+}
+
+.section-line .where-steps {
+  margin: 0;
+}
+
+.account-pick {
+  width: auto;
+  padding: 3px 6px;
+  font-family: inherit;
+}
+
+/* launch line: full-width line, then actions centered underneath (same for every launcher) */
+.section-line .launch-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.6em;
+  word-break: normal;
+}
+.launch-line .token {
+  white-space: nowrap;
+}
+.line-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.line-actions .btn {
+  min-width: 90px;
+}
+.line-actions .confirm {
+  align-items: center;
+}
+
+/* push the bottom part of a card down, so cards side by side line up at the bottom */
+.launch-tile .launch-head + * {
+  margin-top: auto;
+}
+.tile.stack {
+  display: flex;
+  flex-direction: column;
+}
+.tile.stack .btn-grid {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+/* tier tag always beside the title; a long title wraps on its own */
+.launch-tile .tile-label {
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.launch-tile .tile-label .tier {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Write button: fixed width so "✓ Written" doesn't change its size */
+.btn.steam-write {
+  min-width: 160px;
+}
+.btn.steam-write.done:disabled {
+  opacity: 1;
+  background: rgba(126, 224, 143, 0.15);
+  border-color: rgba(126, 224, 143, 0.45);
+  color: var(--add-ink);
+}
+
+/* floating "Launch Apex" button, bottom-right of the main area (left of the pending panel) */
+.launch-fab {
+  position: fixed;
+  right: 344px;
+  bottom: 24px;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.launch-fab[hidden] {
+  display: none;
+}
+.fab-main {
+  padding: 12px 22px;
+  font-size: 14.5px;
+  border-radius: 999px;
+  box-shadow:
+    0 10px 30px rgba(255, 70, 85, 0.35),
+    0 4px 12px rgba(0, 0, 0, 0.5);
+}
+.fab-main:hover {
+  filter: brightness(1.08);
+}
+.fab-close {
+  all: unset;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--tile);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 15px;
+}
+.fab-close:hover {
+  color: var(--ink);
+}
+
+/* Audio tab: one card per row, full width */
+.grid.stacked {
+  grid-template-columns: 1fr;
+}
+.pct-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.pct-input {
+  width: 64px;
+  text-align: right;
+}
+
+/* Audio tab: the cards after master volume and the audio mix, two per row */
+.grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Controller tab: the stick drift warning spans the row, text flows normally */
+.banner.wide {
+  grid-column: 1 / -1;
+  display: block;
+}
+
+/* Theme picker at the bottom of the sidebar */
+.theme-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.theme-row select {
+  background: var(--tile);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 4px 6px;
+  font: inherit;
+}
+
+/* Navy theme: Diego's dark palette (css-resets-y-setups). White accent; pending changes stay red. */
+:root[data-theme="navy"] {
+  --bg: hsl(235 22% 10%);
+  --panel: hsl(235 22% 13%);
+  --tile: hsl(235 22% 16%);
+  --line: hsl(235 16% 24%);
+  --ink: hsl(0 0% 95%);
+  --muted: hsl(0 0% 70%);
+  --accent: hsl(0 0% 100%);
+  --accent-soft: hsl(0 0% 100% / 0.1);
+  --on-accent: hsl(235 22% 10%);
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+:root[data-theme="navy"] h1,
+:root[data-theme="navy"] h3 {
+  text-wrap: balance;
+}
+:root[data-theme="navy"] .tile-help {
+  text-wrap: pretty;
+}
+:root[data-theme="navy"] .switch:not(:checked) {
+  background: hsl(235 14% 30%);
+}
+:root[data-theme="navy"] .tile-cvar,
+:root[data-theme="navy"] .bind-raw,
+:root[data-theme="navy"] .table td.dim {
+  color: hsl(235 10% 50%);
+}
+:root[data-theme="navy"] .toast,
+:root[data-theme="navy"] .jump-star::after {
+  background: hsl(235 20% 22%);
+}
+:root[data-theme="navy"] .keycap {
+  background: linear-gradient(hsl(235 20% 22%), hsl(235 20% 18%));
+  border-color: hsl(235 16% 30%);
+}
+:root[data-theme="navy"] ::-webkit-scrollbar-thumb {
+  background: hsl(235 16% 26%);
+}
+:root[data-theme="navy"] ::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(235 16% 34%);
+}
+:root[data-theme="navy"] .fab-main {
+  box-shadow:
+    0 10px 30px hsl(0 0% 100% / 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Backups: rows wrap their buttons under the name when the window is narrow */
+.backup-main {
+  flex-wrap: wrap;
+}
+.backup-main > div:first-child {
+  min-width: 0;
+}
+.backup-actions {
+  flex-wrap: wrap;
+}
+.content .table td {
+  overflow-wrap: anywhere;
+}
+/* Narrow windows: the Audio tab's two-per-row cards stack into one column */
+@media (max-width: 1100px) {
+  .grid.two {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.table code,
+.chips {
+  overflow-wrap: anywhere;
+}
+.chips {
+  flex-wrap: wrap;
+}
+.segmented {
+  flex-wrap: wrap;
+}
+/* Narrow windows: Undo/Redo drop under the "Pending changes" title instead of being cut off */
+.changes-head {
+  flex-wrap: wrap;
+}
+
+/* Controller tab */
+.banner.drift {
+  display: block;
+  align-self: stretch;
+}
+.banner.drift p {
+  margin: 4px 0 0;
+  line-height: 1.5;
+}
+.tile.pro {
+  display: grid;
+  gap: 4px;
+}
+.pro-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.pro-head > div {
+  flex: 1;
+  min-width: 0;
+}
+
+/* fadeBox: long content shows a short preview that fades out, with a see-through
+   "Show more" button floating over the fade */
+.fade-box {
+  position: relative;
+}
+.fade-inner {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.fade-box.collapsed .fade-inner {
+  max-height: 150px !important;
+  -webkit-mask-image: linear-gradient(#000 40%, transparent);
+  mask-image: linear-gradient(#000 40%, transparent);
+}
+.fade-more {
+  all: unset;
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+  padding: 5px 16px;
+  border-radius: 999px;
+  background: hsl(0 0% 100% / 0.08);
+  border: 1px solid hsl(0 0% 100% / 0.16);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transition: background 0.15s;
+}
+.fade-more:hover,
+.fade-more:focus-visible {
+  background: hsl(0 0% 100% / 0.16);
+}
+.fade-box:not(.collapsed) .fade-more {
+  position: static;
+  display: block;
+  width: fit-content;
+  margin: 8px auto 0;
+  transform: none;
+}
+
+/* Resolution: the width × height boxes sit above the preset buttons */
+.tile.stack .res-row {
+  margin: 4px 0 10px;
+}
+
+/* Mouse acceleration (and any card with a warning) */
+.tile-warn {
+  color: #ffd36b;
+  font-size: 12.5px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+/* Binds: editing */
+.bind-edit {
+  white-space: nowrap;
+  text-align: right;
+}
+.bind-edit .btn + .btn {
+  margin-left: 4px;
+}
+.add-bind {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0 14px;
+}
+.add-bind-select {
+  width: auto;
+  flex: 0 1 280px;
+  min-width: 180px;
+}
+.bind-conflict {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.conflict-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* "Press a key…" overlay while rebinding */
+.capture-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.55);
+  cursor: crosshair;
+}
+.capture-box {
+  background: var(--panel);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: 22px 28px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+.capture-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+/* Binds: glossary */
+.bind-glossary {
+  margin-top: 26px;
+}
+.table.glossary td.g-name {
+  width: 34%;
+  vertical-align: top;
+}
+.table.glossary td.g-name .bind-raw {
+  display: block;
+}
+.table.glossary td.g-text {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Performance mode: "In Apex's video menu" / "Config file only" groups */
+.diff-h {
+  margin: 10px 0 6px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+.diff-h:first-child {
+  margin-top: 0;
+}
+.diff-h .dim {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.how-lead {
+  margin: 0 0 4px;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.section-line .where-steps {
+  color: var(--ink);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+  
+  
+}
+
+/* All settings: name, label and a short description per row */
+.all-label {
+  font-weight: 600;
+}
+.all-help {
+  color: var(--muted);
+  font-size: 12.5px;
+  margin-top: 2px;
+  max-width: 60ch;
+}
+
+/* Backups timeline: which file each difference belongs to */
+.file-tag {
+  margin-left: 8px;
+  font-size: 10.5px;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+.backup .fade-box {
+  margin-top: 10px;
+}
+.backup.original {
+  border-style: dashed;
+}
+
+/* fadeBox with little content: nothing to fade */
+.fade-box.short .fade-inner {
+  max-height: none !important;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+.fade-box.short .fade-more {
+  display: none;
+}
+
+/* Performance mode: short note under "Config file only" */
+.diff-note {
+  margin: -2px 0 8px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+/* Sidebar group headings */
+.nav-group {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  padding: 14px 10px 4px;
+}
+.nav-section {
+  display: grid;
+  gap: 2px;
+}
+/* Config file only: tinted zone, so it reads as the app's special part */
+.nav-section.zone {
+  margin: 0 0 6px;
+  padding: 10px 0 6px;
+  border-radius: 8px;
+  background: var(--accent-soft);
+}
+.nav-section.zone .nav-group {
+  padding-top: 0;
+  color: var(--accent);
+  font-size: 11px;
+}
+.nav-note {
+  font-size: 11.5px;
+  color: var(--muted);
+  padding: 0 10px 6px;
+}
+/* Inside the zone: no hover fill, the selected tab is only a red left bar */
+.nav-section.zone .nav-item:hover {
+  background: transparent;
+}
+.nav-section.zone .nav-item.active {
+  background: transparent;
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+.nav-item {
+  white-space: nowrap;
+}
+
+/* All settings: On/Off switch cell */
+.onoff {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* Taller sidebar (group headings): scroll instead of pushing the file box off screen */
+.sidebar {
+  overflow-y: auto;
+}
+.nav-item {
+  padding-block: 7px;
+}
+
+/* Movement abilities on SPACE: what it fixes, one row per legend (legend | gain | how) */
+.fix-list {
+  margin: 6px 0 12px;
+  display: grid;
+  gap: 4px;
+}
+.fix-row {
+  display: grid;
+  grid-template-columns: 18px 120px 150px minmax(0, 1fr);
+  gap: 12px;
+  align-items: baseline;
+  padding: 7px 10px;
+  border-radius: 6px;
+  background: var(--bg);
+  font-size: 14px;
+}
+.fix-num {
+  font-weight: 700;
+  color: var(--muted);
+  text-align: right;
+}
+.fix-who {
+  color: var(--ink);
+  font-size: 13px;
+}
+.fix-gain {
+  font-weight: 700;
+  color: var(--add-ink);
+}
+.fix-how {
+  color: var(--muted);
+  font-size: 13px;
+}
+.fix-row.heads-up .fix-gain {
+  color: #ffc940;
+}
+@media (max-width: 1100px) {
+  .fix-row {
+    grid-template-columns: 18px 110px minmax(0, 1fr);
+  }
+  .fix-how {
+    grid-column: 2 / -1;
+  }
+}
+
+/* Jump & dash: the big switch sits at the top right, not halfway down the card */
+.tile.hero-toggle {
+  align-items: flex-start;
+}
+
+/* Performance mode: FOV line on its own above the groups */
+.preset .wiz-diff + .diff-h {
+  margin-top: 12px;
+}
+
+@media (max-width: 1100px) {
+  
+}
+
+/* A full-width slider card kept short: text on the left, slider on the right (Field of view) */
+.tile.inline-slider {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 1fr);
+  column-gap: 24px;
+  align-items: center;
+}
+.tile.inline-slider > .slider-row {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  margin: 0;
+}
+@media (max-width: 1100px) {
+  .tile.inline-slider {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .tile.inline-slider > .slider-row {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+
+/* Long thin cards: text on the left, controls on the right (Display mode, Resolution) */
+.tile.row-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 1fr);
+  column-gap: 24px;
+  align-items: center;
+}
+.row-controls {
+  display: grid;
+  gap: 8px;
+}
+.tile.row-card .res-row {
+  margin: 0;
+}
+@media (max-width: 1100px) {
+  .tile.row-card {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 8px;
+  }
+}
+
+/* ADS multiplier: Slower / Same / Faster under the slider (the empty 4th cell sits under the number box) */
+.ads-scale {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 90px;
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.ads-scale span:nth-child(2) {
+  text-align: center;
+  color: var(--ink);
+}
+.ads-scale span:nth-child(3) {
+  text-align: right;
+}
+
+/* Graphics rows: the dropdown fills the right column */
+.tile.row-card .video-select {
+  width: 100%;
+}
+.tile.row-card .tile-help {
+  margin-bottom: 2px;
+}
+
+/* Graphics list: thinner rows, closer together */
+.grid.stacked:has(> .row-card) {
+  gap: 8px;
+}
+.grid.stacked > .tile.row-card,
+.grid.stacked > .tile.inline-slider,
+.grid.stacked > .tile.toggle {
+  padding: 10px 16px;
+}
+
+/* Performance mode: one-line explanation under each config-file-only setting */
+.diff-help {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+/* name | explanation | now → new | switch */
+/* fixed column widths so every row lines up */
+.wiz-diff-row.with-help {
+  grid-template-columns: 150px minmax(0, 1fr) 56px 14px 72px auto;
+}
+.wiz-diff-row.with-help > :nth-child(3) {
+  text-align: right;
+}
+@media (max-width: 1100px) {
+  .wiz-diff-row.with-help {
+    grid-template-columns: 1fr auto auto auto auto;
+  }
+  .wiz-diff-row.with-help .diff-help {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
+/* Quality preset: centred, so it reads as the boundary between display and quality settings */
+.tile.quality-divider {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 10px;
+  padding-block: 16px;
+}
+.tile.quality-divider .tile-label {
+  justify-content: center;
+}
+.tile.quality-divider .tile-help {
+  max-width: 62ch;
+}
+.tile.quality-divider .btn-grid {
+  width: min(420px, 100%);
+}
+
+/* Mouse & keyboard: ADS multiplier wide, mouse acceleration narrow, side by side */
+.grid.mouse-row {
+  grid-template-columns: minmax(0, 3fr) minmax(200px, 1fr);
+}
+@media (max-width: 1100px) {
+  .grid.mouse-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Sidebar a bit wider so every tab name fits on one line */
+body {
+  grid-template-columns: clamp(190px, 19vw, 236px) minmax(0, 1fr) clamp(220px, 20vw, 272px);
+}
+
+/* Pro cards: big name, Sensitivity | Button layout tabs, a switch row at the top of each tab */
+.pro-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.pro-tabs {
+  margin: 10px 0 8px;
+  width: fit-content;
+}
+.pro-tab-on {
+  color: var(--add-ink);
+  font-size: 11px;
+}
+.pro-switch-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  cursor: pointer;
+}
+.pro-unchecked summary {
+  cursor: pointer;
+  font-size: 12.5px;
+  color: var(--muted);
+  margin: 8px 0 4px;
+}
+
+/* Full-screen windows: side padding grows with the window so lines of text don't get too long */
+.content {
+  padding-inline: clamp(28px, 5vw, 96px);
+}
+
+/* The ★ tab's name is longer than the sidebar: let just that one wrap onto two lines */
+.nav-item.featured {
+  white-space: normal;
+  line-height: 1.3;
+}
+
+/* Launch tab: "or copy manually to Steam" between the Apply and Copy buttons */
+.or-text {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Tall row cards (Resolution): title stays top left like the other cards, not centred */
+.tile.row-card.top {
+  align-items: start;
+}

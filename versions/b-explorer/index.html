@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'">
+  <title>Apex Config Editor — Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">APEX<span>CONFIG</span></div>
+    <nav id="nav"></nav>
+    <div class="file-box">
+      <div class="file-name" id="file-name">—</div>
+      <div id="file-badges" class="badges"></div>
+      <button id="open-btn" class="btn small">Open file…</button>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="toolbar">
+      <h1 id="view-title">—</h1>
+      <input id="search" type="search" placeholder="Search settings, keys, commands…" autocomplete="off">
+    </div>
+    <div id="view"></div>
+  </main>
+
+  <aside class="changes">
+    <h2>Pending changes <span id="change-count" class="count">0</span></h2>
+    <div id="change-list" class="change-list"></div>
+    <label class="opt"><input type="checkbox" id="relock" checked> Keep file read-only after save</label>
+    <div class="change-actions">
+      <button id="discard-btn" class="btn">Discard all</button>
+      <button id="save-btn" class="btn primary">Save to file</button>
+    </div>
+    <div id="status" class="status"></div>
+  </aside>
+
+  <script src="../../shared/dom.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>
